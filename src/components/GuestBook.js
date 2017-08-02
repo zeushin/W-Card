@@ -42,7 +42,7 @@ class GuestBook extends Component {
     render() {
         return (
             <div>
-                <h2>GuestBook</h2>
+                <h1>방명록</h1>
                 <GuestCreator onInsert={GuestBook._insertToFirebase.bind(this)} />
                 <ul>
                     {

@@ -7,7 +7,9 @@ import React, { Component } from 'react';
 class Who extends Component {
     render() {
         return (
-            <div><h2>Who</h2></div>
+            <div>
+                <h1>RSVP</h1>
+            </div>
         );
     }
 }
