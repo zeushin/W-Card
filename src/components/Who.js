@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import { ModalContainer, ModalDialog } from 'react-modal-dialog';
+import AttendanceCreator from "./AttendanceCreator";
 
 class Who extends Component {
     constructor() {
@@ -28,8 +29,7 @@ class Who extends Component {
                     this.state.isShowingModal &&
                     <ModalContainer onClose={ this._close.bind(this) } onTouchStart={ this._close.bind(this) }>
                         <ModalDialog onClose={ this._close.bind(this) }>
-                            <h1>Dialog Content</h1>
-                            <p>More Content. Anything goes here</p>
+                            <AttendanceCreator/>
                         </ModalDialog>
                     </ModalContainer>
                 }
