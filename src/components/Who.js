@@ -9,27 +9,37 @@ import AttendanceCreator from "./AttendanceCreator";
 class Who extends Component {
     constructor() {
         super();
-        this.state = { isShowingModal: false };
+        this.state = {
+            isShowingModal: false,
+            side: ""
+        };
     }
 
-    _attend() {
-        this.setState({ isShowingModal: true });
+    _attend(e) {
+        this.setState({
+            side: e.target.name,
+            isShowingModal: true
+        });
     }
 
     _close() {
-        this.setState({ isShowingModal: false });
+        this.setState({
+            isShowingModal: false,
+            side: ""
+        });
     };
 
     render() {
         return (
             <div>
                 <h1>RSVP</h1>
-                <button onClick={ this._attend.bind(this) }>Attendance</button>
+                <button onClick={ this._attend.bind(this) } name="groom">신랑쪽</button>
+                <button onClick={ this._attend.bind(this) } name="bride">신부쪽</button>
                 {
                     this.state.isShowingModal &&
                     <ModalContainer onClose={ this._close.bind(this) } onTouchStart={ this._close.bind(this) }>
                         <ModalDialog onClose={ this._close.bind(this) }>
-                            <AttendanceCreator/>
+                            <AttendanceCreator side={ this.state.side } onClose={ this._close.bind(this) }/>
                         </ModalDialog>
                     </ModalContainer>
                 }

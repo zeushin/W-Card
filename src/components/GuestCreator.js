@@ -8,8 +8,6 @@ class GuestCreator extends React.Component {
     defaultState = {
         name: "",
         contents: "",
-        namePlaceholder: "이름",
-        contentsPlaceholder: "내용",
         buttonTitle: "Insert"
     };
 
@@ -42,21 +40,19 @@ class GuestCreator extends React.Component {
     render() {
         return (
             <div>
-              <p>
                 <input type="text"
                        name="name"
-                       placeholder={ this.state.namePlaceholder }
+                       placeholder="이름"
                        value={ this.state.name }
                        onChange={ this.handleChange.bind(this) }
                 />
                 <input type="text"
                        name="contents"
-                       placeholder={ this.state.contentsPlaceholder }
+                       placeholder="내용"
                        value={ this.state.contents }
                        onChange={ this.handleChange.bind(this) }
                 />
                 <button onClick={ this.handleClick.bind(this) }>{ this.state.buttonTitle }</button>
-              </p>
             </div>
         );
     }
