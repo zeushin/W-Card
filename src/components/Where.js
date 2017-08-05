@@ -20,7 +20,7 @@ class Where extends Component {
                 <h3>여의도 전경련빌딩 50층</h3>
                 <h3>세상의 모든 아침</h3>
                 <div>
-                    <img width="100%" src="image/where01.png" />
+                    <img width="100%" src="image/where01.png" alt="map" />
                     <button onClick={ this._openNaverMap.bind(this) }>Naver Map</button>
                     <button onClick={ this._openDaumMap.bind(this) }>Daum Map</button>
                 </div>

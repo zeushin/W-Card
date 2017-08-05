@@ -17,10 +17,10 @@ class Header extends Component {
         };
         return (
             <Slider {...settings}>
-                <img src="image/header01.jpeg"/>
-                <img src="image/header02.jpeg"/>
-                <img src="image/header03.jpeg"/>
-                <img src="image/header04.jpeg"/>
+                <img src="image/header01.jpeg" alt="header01" />
+                <img src="image/header02.jpeg" alt="header02" />
+                <img src="image/header03.jpeg" alt="header03" />
+                <img src="image/header04.jpeg" alt="header04" />
             </Slider>
         );
     }
