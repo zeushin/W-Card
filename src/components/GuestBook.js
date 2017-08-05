@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import GuestCreator from "./GuestCreator";
 import * as firebase from 'firebase';
+import GuestBookList from "./GuestBookList";
 
 class GuestBook extends Component {
     constructor() {
@@ -44,13 +45,7 @@ class GuestBook extends Component {
             <div>
                 <h1>방명록</h1>
                 <GuestCreator onInsert={GuestBook._insertToFirebase.bind(this)} />
-                <ul>
-                    {
-                        this.state.guests.map((user) => {
-                            return (<li key={user.key}>{user.name} | {user.contents}</li>)
-                        })
-                    }
-                </ul>
+                <GuestBookList guests={this.state.guests} />
             </div>
         );
     }
