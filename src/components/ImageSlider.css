@@ -1,0 +1,12 @@
+.ImageSlider > .slick-dots {
+    bottom: 5px;
+}
+
+.ImageSlider > .slick-dots li {
+    margin: 0;
+    width: 15px;
+}
+
+.ImageSlider > .slick-dots li button:before {
+    font-size: 10px;
+}

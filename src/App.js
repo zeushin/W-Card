@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from "./components/Header";
+import Header from "./components/ImageSlider";
 import When from "./components/When";
 import Where from "./components/Where";
 import Who from "./components/Who";

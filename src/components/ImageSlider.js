@@ -4,8 +4,9 @@
 
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import './ImageSlider.css';
 
-class Header extends Component {
+class ImageSlider extends Component {
     render() {
         const settings = {
             dots: true,
@@ -13,10 +14,11 @@ class Header extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
             arrows: false
         };
         return (
-            <Slider {...settings}>
+            <Slider {...settings} className="ImageSlider">
                 <img src="image/header01.jpeg" alt="header01" />
                 <img src="image/header02.jpeg" alt="header02" />
                 <img src="image/header03.jpeg" alt="header03" />
@@ -26,4 +28,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default ImageSlider
