@@ -29,6 +29,10 @@ class Who extends Component {
         });
     };
 
+    _modalStyle = {
+        borderRadius: 0
+    };
+
     render() {
         return (
             <div>
@@ -37,8 +41,8 @@ class Who extends Component {
                 <button onClick={ this._attend.bind(this) } name="bride">신부쪽</button>
                 {
                     this.state.isShowingModal &&
-                    <ModalContainer onClose={ this._close.bind(this) } onTouchStart={ this._close.bind(this) }>
-                        <ModalDialog onClose={ this._close.bind(this) }>
+                    <ModalContainer onTouchStart={ this._close.bind(this) } onClose={ this._close.bind(this) }>
+                        <ModalDialog left="0" width="100%" style={ this._modalStyle }>
                             <AttendanceCreator side={ this.state.side } onClose={ this._close.bind(this) }/>
                         </ModalDialog>
                     </ModalContainer>
