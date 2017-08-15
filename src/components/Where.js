@@ -7,11 +7,11 @@ import './Where.css';
 
 class Where extends Component {
     _openNaverMap() {
-        window.open('http://naver.me/xgm6alNS');
+        window.open('http://naver.me/Gkuaunj4');
     }
 
     _openDaumMap() {
-        window.open('http://dmaps.kr/5ma44');
+        window.open('http://dmaps.kr/5uz5e');
     }
 
     render() {
