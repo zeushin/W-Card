@@ -44,6 +44,9 @@ class GuestBook extends Component {
         return (
             <div className="sidePadding">
                 <h1>축하메시지 남겨주세요</h1>
+                <div className="Ribbon">
+                    <img src="/image/invi_ic_ribbon@2x.jpg"/>
+                </div>
                 <GuestCreator onInsert={GuestBook._insertToFirebase.bind(this)} />
                 <GuestBookList guests={this.state.guests} />
             </div>

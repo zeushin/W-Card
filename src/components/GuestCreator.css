@@ -2,3 +2,10 @@
     display: inline-block;
     width: 100%;
 }
+
+.GuestCreator > button {
+    width: 100%;
+    height: 63px;
+    background: url('/image/invi_btn_message@2x.jpg') no-repeat center;
+    background-size: contain;
+}

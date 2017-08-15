@@ -1,6 +1,20 @@
 /* global */
+@font-face { font-family: Gyungphil; src: url('/DX-Gyungphil-B.ttf'); }
+
 input, textarea {
   box-sizing : border-box;
+}
+
+h1, h3, p {
+  font-family: Gyungphil, sans-serif;
+}
+
+p {
+  font-weight: lighter;
+}
+
+button {
+  border: none;
 }
 
 .bottomBorder {
@@ -16,20 +30,27 @@ input, textarea {
   text-align: center;
 }
 
+.Intro {
+  width: 100%;
+}
+
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+.Ribbon img {
+  height: 29px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  /*background-color: #222;*/
+  /*height: 150px;*/
+  /*padding: 20px;*/
+  /*color: white;*/
 }
 
 .App-intro {
-  font-size: large;
+  /*font-size: large;*/
 }
 
 @keyframes App-logo-spin {

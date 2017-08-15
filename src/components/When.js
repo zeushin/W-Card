@@ -10,7 +10,9 @@ class When extends Component {
         return (
             <div className="When bottomBorder">
                 <h1>저희 둘 결혼합니다</h1>
-                <h3>2017.09.09 6 PM</h3>
+                <div className="Ribbon">
+                    <img src="/image/invi_ic_ribbon@2x.jpg"/>
+                </div>
                 <p>
                     <strong>신태현</strong> <span role="img" aria-label="Dot">・ </span> <strong>박경애</strong> 의 장남 <strong>신범철</strong>
                 </p>

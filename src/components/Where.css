@@ -1,2 +1,17 @@
-.Where .mapContainer {
+.Where .Map-container {
+}
+
+.Where .Map-container button {
+    width: 50%;
+    height: 56px;
+}
+
+.Where .Naver {
+    background: url('/image/invi_btn_navermap@2x.jpg') no-repeat center;
+    background-size: contain;
+}
+
+.Where .Kakao {
+    background: url('/image/invi_btn_kakaomap@2x.jpg') no-repeat center;
+    background-size: contain;
 }

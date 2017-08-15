@@ -53,7 +53,7 @@ class GuestCreator extends React.Component {
                           value={ this.state.contents }
                           onChange={ this.handleChange.bind(this) }
                 />
-                <button onClick={ this.handleClick.bind(this) }>글남기기</button>
+                <button onClick={this.handleClick.bind(this)}/>
             </div>
         );
     }

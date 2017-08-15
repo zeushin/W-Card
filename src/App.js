@@ -13,8 +13,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h2>Welcome to React</h2>
+                    <img src="/image/invi_intro_img@2x.jpg" className="Intro" alt="logo" />
                 </div>
                 <Header/>
                 <When/>
