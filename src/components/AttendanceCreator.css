@@ -1,0 +1,35 @@
+.AttendanceCreator {
+
+}
+
+.AttendanceCreator > p {
+    text-align: center;
+}
+
+.AttendanceCreator > p > strong {
+    color: red;
+}
+
+.AttendanceCreator > li {
+    list-style: none;
+}
+
+.AttendanceCreator > li > ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.AttendanceCreator > li > ul input {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.AttendanceCreator > li > ul button {
+    width: 100%;
+}
+
+.AttendanceCreator .OKButton button {
+    width: 100%;
+}

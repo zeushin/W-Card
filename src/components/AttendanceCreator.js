@@ -4,15 +4,14 @@
 
 import React, { Component } from 'react';
 import * as firebase from 'firebase';
+import './AttendanceCreator.css';
 
 class AttendanceCreator extends Component {
     constructor() {
         super();
         this.state = {
             name: "",
-            number: 1,
-            attend: true,
-            absent: false
+            accompanies: []
         };
     }
 
@@ -30,28 +29,8 @@ class AttendanceCreator extends Component {
         });
     }
 
-    _onNumberChanged(e) {
-        this.setState({
-            number: e.target.value
-        });
-    }
-
-    _onAttendChanged() {
-        this.setState({
-            attend: true,
-            absent: false
-        });
-    }
-
-    _onAbsentChanged() {
-        this.setState({
-            attend: false,
-            absent: true
-        });
-    }
-
     _onSubmitClicked() {
-        if (this.state.name.length === 0 || this.state.number <= 0) {
+        if (this.state.name.length === 0) {
             return;
         }
         this._pushAttendance();
@@ -59,56 +38,78 @@ class AttendanceCreator extends Component {
 
     _pushAttendance() {
         const guestBookRef = firebase.database().ref().child('attendance');
+        let filteredAccompanies = this.state.accompanies.filter((acc) => {
+            return acc.length > 0
+        });
+
+        let attendaces = this.state.name;
+        filteredAccompanies.map((acc) => {
+            attendaces += ", " + acc;
+        });
+
+        alert(this.title() + " 하객으로 \"" + attendaces + "\" 참석합니다!");
         guestBookRef.push({
             side: this.props.side,
             name: this.state.name,
-            number: this.state.number,
-            isAttend: this.state.attend
+            number: filteredAccompanies.length + 1,
+            accompanies: filteredAccompanies
         }, () => {
             this.props.onClose();
         });
     }
 
+    _onAddAttendance() {
+        let accompanies = this.state.accompanies;
+        accompanies.push("");
+        this.setState({
+            accompanies: accompanies
+        });
+    }
+
+    _onAccompanyChanged(i, e) {
+        let accompanies = this.state.accompanies;
+        accompanies[i] = e.target.value;
+        this.setState({
+            accompanies: accompanies
+        });
+    }
+
     render() {
         return (
-            <div>
-                <h1>{ this.title() }</h1>
-                <div>
-                    <label>이름</label>
-                    <input type="text"
-                           name="name"
-                           placeholder="이름"
-                           value={ this.state.name }
-                           onChange={ this._onNameChanged.bind(this) }
-                    />
-                </div>
-                <div>
-                    <label>참석인원</label>
-                    <input type="number"
-                           name="number"
-                           placeholder="참석인원"
-                           value={ this.state.number }
-                           onChange={ this._onNumberChanged.bind(this) }
-                           pattern="\d*"
-                    />
-                </div>
-                <div>
-                    <input id="attend"
-                           type="radio"
-                           checked={ this.state.attend }
-                           onChange={ this._onAttendChanged.bind(this) }
-                    />
-                    <label htmlFor="attend">참석합니다</label>
-                </div>
-                <div>
-                    <input id="absent"
-                           type="radio"
-                           checked={ this.state.absent }
-                           onChange={ this._onAbsentChanged.bind(this) }
-                    />
-                    <label htmlFor="absent">불참</label>
-                </div>
-                <div>
+            <div className="AttendanceCreator">
+                <h1>네, 참석합니다!</h1>
+                <p>
+                    참석여부 <strong>꼭!</strong> 알려주세요<br/>
+                    예식은 지정석으로 진행되어요
+                </p>
+                <li>
+                    <ul>
+                        <input placeholder="이름을 남겨주세요"
+                               type="text"
+                               name="name"
+                               value={ this.state.name }
+                               onChange={ this._onNameChanged.bind(this) }
+                        />
+                    </ul>
+                    {
+                        this.state.accompanies.map((acc, i) => {
+                            return (
+                                <ul key={ i }>
+                                    <input placeholder="동행인의 이름을 남겨주세요"
+                                           type="text"
+                                           name={ 'accompanies' + i }
+                                           value={ this.state.accompanies[i] }
+                                           onChange={ this._onAccompanyChanged.bind(this, i) }
+                                    />
+                                </ul>
+                            )
+                        })
+                    }
+                    <ul>
+                        <button onClick={ this._onAddAttendance.bind(this) }>+ 동행인 추가</button>
+                    </ul>
+                </li>
+                <div className="OKButton">
                     <button onClick={ this._onSubmitClicked.bind(this) }>확인</button>
                 </div>
             </div>
