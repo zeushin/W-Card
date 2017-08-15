@@ -1,0 +1,15 @@
+.GuestBookList {
+
+}
+
+.GuestBookList table {
+    width: 100%;
+}
+
+.GuestBookList table th {
+    width: 70px;
+}
+
+.GuestBookList table td {
+    text-align: left;
+}

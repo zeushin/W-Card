@@ -19,7 +19,7 @@ class App extends Component {
                 <Header/>
                 <When/>
                 <Where/>
-                <Who/>
+                {/*<Who/>*/}
                 <GuestBook/>
                 <Footer/>
             </div>

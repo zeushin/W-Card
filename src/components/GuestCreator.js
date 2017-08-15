@@ -2,13 +2,13 @@
  * Created by masher on 6/10/17.
  */
 
-import * as React from "react";
+import * as React from 'react';
+import './GuestCreator.css';
 
 class GuestCreator extends React.Component {
     defaultState = {
         name: "",
-        contents: "",
-        buttonTitle: "Insert"
+        contents: ""
     };
 
     constructor() {
@@ -39,20 +39,21 @@ class GuestCreator extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="GuestCreator">
                 <input type="text"
                        name="name"
-                       placeholder="이름"
+                       placeholder="이름을 남겨주세요"
                        value={ this.state.name }
                        onChange={ this.handleChange.bind(this) }
                 />
-                <input type="text"
-                       name="contents"
-                       placeholder="내용"
-                       value={ this.state.contents }
-                       onChange={ this.handleChange.bind(this) }
+                <textarea type="text"
+                          name="contents"
+                          placeholder="메시지를 남겨주세요"
+                          rows="4"
+                          value={ this.state.contents }
+                          onChange={ this.handleChange.bind(this) }
                 />
-                <button onClick={ this.handleClick.bind(this) }>{ this.state.buttonTitle }</button>
+                <button onClick={ this.handleClick.bind(this) }>글남기기</button>
             </div>
         );
     }

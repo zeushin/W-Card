@@ -3,6 +3,7 @@
  */
 
 import React, { Component } from 'react';
+import './Where.css';
 
 class Where extends Component {
     _openNaverMap() {
@@ -15,11 +16,16 @@ class Where extends Component {
 
     render() {
         return (
-            <div>
-                <h1>어디서</h1>
-                <h3>여의도 전경련빌딩 50층</h3>
-                <h3>세상의 모든 아침</h3>
-                <div>
+            <div className="Where bottomBorder sidePadding">
+                <h1>여기에서 뵈어요</h1>
+                <h3>더 스카이팜</h3>
+                <p>
+                    서울특별시 영등포구 여의대로 24<br/>
+                    전경련회관 50층<br/>
+                    02-2055-4440<br/>
+                    주차 가능(지하주차장)
+                </p>
+                <div className="mapContainer">
                     <img width="100%" src="image/where01.png" alt="map" />
                     <button onClick={ this._openNaverMap.bind(this) }>Naver Map</button>
                     <button onClick={ this._openDaumMap.bind(this) }>Daum Map</button>

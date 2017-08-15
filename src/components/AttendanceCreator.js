@@ -45,6 +45,7 @@ class AttendanceCreator extends Component {
         let attendaces = this.state.name;
         filteredAccompanies.map((acc) => {
             attendaces += ", " + acc;
+            return acc
         });
 
         alert(this.title() + " 하객으로 \"" + attendaces + "\" 참석합니다!");

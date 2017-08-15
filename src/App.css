@@ -1,6 +1,15 @@
 /* global */
-input {
+input, textarea {
   box-sizing : border-box;
+}
+
+.bottomBorder {
+  border-bottom: 1px solid gray;
+}
+
+.sidePadding {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .App {

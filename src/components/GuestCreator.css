@@ -1,0 +1,4 @@
+.GuestCreator > input, .GuestCreator > textarea, .GuestCreator > button {
+    display: inline-block;
+    width: 100%;
+}

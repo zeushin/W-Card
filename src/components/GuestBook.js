@@ -42,8 +42,8 @@ class GuestBook extends Component {
 
     render() {
         return (
-            <div>
-                <h1>방명록</h1>
+            <div className="sidePadding">
+                <h1>축하메시지 남겨주세요</h1>
                 <GuestCreator onInsert={GuestBook._insertToFirebase.bind(this)} />
                 <GuestBookList guests={this.state.guests} />
             </div>

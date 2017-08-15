@@ -3,22 +3,19 @@
  */
 
 import React, { Component } from 'react';
+import './GuestBookList.css';
 
 class GuestBookList extends Component {
     render() {
-        let _tableStyle = {
-            margin: 'auto'
-        };
-
         return (
-            <div>
-                <table style={_tableStyle}>
+            <div className="GuestBookList">
+                <table>
                     <tbody>
                     {
                         this.props.guests.map((user) => {
                             return (
                                 <tr key={user.key}>
-                                    <td>{user.name}</td>
+                                    <th>{user.name}</th>
                                     <td>{user.contents}</td>
                                 </tr>
                             )
