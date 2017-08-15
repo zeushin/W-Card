@@ -1,3 +1,7 @@
-.When {
-    /*border-bottom: solid 1px gray;*/
+.When strong {
+    font-size: 17px;
+}
+
+.When .Parents {
+    margin: 0 0 6px 0;
 }

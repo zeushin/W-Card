@@ -16,7 +16,7 @@ class Footer extends Component {
                     <a href="https://facebook.github.io/react/"><img src={logo} className="App-logo" alt="logo" /></a>
                     <a href="https://firebase.google.com/"><img src={firebase} className="App-logo" alt="logo" /></a>
                 </div>
-                <a href="https://github.com/zeushin/W-Card">W-Card</a> // TODO: 앱 아이콘 으로 대체
+                <p><a href="https://github.com/zeushin/W-Card">W-Card</a></p>
             </div>
         );
     }

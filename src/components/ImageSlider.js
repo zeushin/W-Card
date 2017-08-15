@@ -19,10 +19,14 @@ class ImageSlider extends Component {
         };
         return (
             <Slider {...settings} className="ImageSlider">
-                <img src="image/header01.jpeg" alt="header01" />
-                <img src="image/header02.jpeg" alt="header02" />
-                <img src="image/header03.jpeg" alt="header03" />
-                <img src="image/header04.jpeg" alt="header04" />
+                <img src="image/invi_photo_01@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_03@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_02@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_04@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_05@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_06@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_07@2x.jpg" alt="header01" />
+                <img src="image/invi_photo_08@2x.jpg" alt="header01" />
             </Slider>
         );
     }

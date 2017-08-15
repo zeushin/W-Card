@@ -1,17 +1,45 @@
 .Where .Map-container {
 }
 
-.Where .Map-container button {
-    width: 50%;
+.Where .Map-container img {
+    margin: 20px 0;
+}
+
+.Where .Event-time {
+    margin-bottom: 6px;
+}
+
+.Where .Map-buttons > li > ul {
+    display: inline-block;
+    width: 49%;
     height: 56px;
 }
 
-.Where .Naver {
-    background: url('/image/invi_btn_navermap@2x.jpg') no-repeat center;
-    background-size: contain;
+.Where .Map-buttons .Naver {
+    margin-right: 5px;
 }
 
-.Where .Kakao {
-    background: url('/image/invi_btn_kakaomap@2x.jpg') no-repeat center;
-    background-size: contain;
+.Where .Map-buttons .Kakao {
+    margin: 0;
+}
+
+.Where .Map-container button {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+.Where .Naver button {
+    background: url('/image/invi_btn_navermap@2x.jpg') no-repeat;
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: 1px;
+    color: white;
+}
+
+.Where .Kakao button {
+    background: url('/image/invi_btn_kakaomap@2x.jpg') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1px;
+    margin-right: auto;
 }

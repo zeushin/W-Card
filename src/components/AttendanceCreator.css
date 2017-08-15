@@ -10,13 +10,7 @@
     color: red;
 }
 
-.AttendanceCreator > li {
-    list-style: none;
-}
-
 .AttendanceCreator > li > ul {
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 

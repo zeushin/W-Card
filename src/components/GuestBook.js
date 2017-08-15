@@ -3,9 +3,10 @@
  */
 
 import React, { Component } from 'react';
-import GuestCreator from "./GuestCreator";
+import GuestCreator from './GuestCreator';
 import * as firebase from 'firebase';
-import GuestBookList from "./GuestBookList";
+import GuestBookList from './GuestBookList';
+import './GuestBook.css'
 
 class GuestBook extends Component {
     constructor() {
@@ -42,10 +43,10 @@ class GuestBook extends Component {
 
     render() {
         return (
-            <div className="sidePadding">
+            <div className="GuestBook sidePadding bottomBorder">
                 <h1>축하메시지 남겨주세요</h1>
                 <div className="Ribbon">
-                    <img src="/image/invi_ic_ribbon@2x.jpg"/>
+                    <img src="/image/invi_ic_ribbon@2x.jpg" alt="ribbon"/>
                 </div>
                 <GuestCreator onInsert={GuestBook._insertToFirebase.bind(this)} />
                 <GuestBookList guests={this.state.guests} />

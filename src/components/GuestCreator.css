@@ -3,9 +3,19 @@
     width: 100%;
 }
 
+.GuestCreator > input {
+    margin-bottom: 8px;
+}
+
+.GuestCreator > textarea {
+    margin-bottom: 15px;
+}
+
 .GuestCreator > button {
     width: 100%;
     height: 63px;
-    background: url('/image/invi_btn_message@2x.jpg') no-repeat center;
-    background-size: contain;
+    background: url('/image/invi_btn_message@2x.jpg') no-repeat;
+    background-size: 100% 100%;
+    font-size: 1em;
+    color: white;
 }

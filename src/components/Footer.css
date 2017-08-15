@@ -1,8 +1,16 @@
 .Footer {
-
+    background-color: #ee9bac;
+    height: 150px;
+    padding-top: 40px;
+    font-size: 1.2em;
+    color: #e16c80;
 }
 
 .Footer .App-logo {
     margin: auto;
     height: 30px;
+}
+
+.Footer > p > a {
+    color: #e16c80;
 }

@@ -1,9 +1,21 @@
 .GuestBookList {
-
+    margin-top: 50px;
+    /*overflow: hidden;*/
 }
 
 .GuestBookList table {
     width: 100%;
+    font-size: 1em;
+}
+
+.GuestBookList table th, .GuestBookList table td {
+    text-align: left;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 1px;
+    height: 20px;
+    padding: 5px 0;
 }
 
 .GuestBookList table th {
@@ -11,5 +23,5 @@
 }
 
 .GuestBookList table td {
-    text-align: left;
+    padding-left: 8px;
 }

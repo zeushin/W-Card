@@ -2,58 +2,80 @@
 @font-face { font-family: Gyungphil; src: url('/DX-Gyungphil-B.ttf'); }
 
 input, textarea {
-  box-sizing : border-box;
+    box-sizing : border-box;
+    border-color: black;
+    border-width: 1px;
+    padding: 13px 10px;
+    margin: 0;
+    font-size: 0.95em;
 }
 
-h1, h3, p {
-  font-family: Gyungphil, sans-serif;
+h1, h3, p, ul, button {
+    font-family: Gyungphil, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
 }
 
 p {
-  font-weight: lighter;
+    font-weight: lighter;
+    font-size: 0.95em;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p.Contents {
+    margin: 40px 0 0 0;
 }
 
 button {
-  border: none;
+    border: none;
+}
+
+li {
+    list-style: none;
 }
 
 .bottomBorder {
-  border-bottom: 1px solid gray;
+    border-bottom: 1px solid #dedede;
+    padding-top: 50px;
+    padding-bottom: 55px;
 }
 
 .sidePadding {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .Intro {
-  width: 100%;
+    width: 100%;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 10s linear;
 }
 
 .Ribbon img {
-  height: 29px;
-}
-
-.App-header {
-  /*background-color: #222;*/
-  /*height: 150px;*/
-  /*padding: 20px;*/
-  /*color: white;*/
-}
-
-.App-intro {
-  /*font-size: large;*/
+    height: 29px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }

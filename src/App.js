@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/ImageSlider";
 import When from "./components/When";
 import Where from "./components/Where";
-import Who from "./components/Who";
 import GuestBook from "./components/GuestBook";
 import Footer from "./components/Footer";
 
