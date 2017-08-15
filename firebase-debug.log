@@ -1,0 +1,33 @@
+[debug] [2017-08-15T15:34:49.172Z] ----------------------------------------------------------------------
+[debug] [2017-08-15T15:34:49.175Z] Command:       /Users/masher/.nvm/versions/node/v8.1.4/bin/node /Users/masher/.nvm/versions/node/v8.1.4/bin/firebase deploy
+[debug] [2017-08-15T15:34:49.175Z] CLI Version:   3.9.2
+[debug] [2017-08-15T15:34:49.175Z] Platform:      darwin
+[debug] [2017-08-15T15:34:49.175Z] Node Version:  v8.1.4
+[debug] [2017-08-15T15:34:49.176Z] Time:          Wed Aug 16 2017 00:34:49 GMT+0900 (KST)
+[debug] [2017-08-15T15:34:49.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-15T15:34:49.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-15T15:34:49.189Z] > authorizing via signed-in user
+[debug] [2017-08-15T15:34:49.191Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-15T15:34:49.191Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/HDvFZJG4xxtRajfK-YrwmKjRgUu3XzhucgvKG4IvKE8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Aug 16 2017 00:34:49 GMT+0900 (KST)
+[debug] [2017-08-15T15:34:49.693Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T15:34:49.740Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/w-card-ce9f3  
+ Wed Aug 16 2017 00:34:49 GMT+0900 (KST)
+[debug] [2017-08-15T15:34:50.934Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T15:34:50.935Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/w-card-ce9f3/tokens  
+ Wed Aug 16 2017 00:34:50 GMT+0900 (KST)
+[debug] [2017-08-15T15:34:51.854Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'w-card-ce9f3'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-08-15T15:34:55.886Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/w-card-ce9f3/uploads/-KraX83Iv8DvmVU9L89c?fileCount=33&message=  
+ Wed Aug 16 2017 00:34:55 GMT+0900 (KST)
+[debug] [2017-08-15T15:35:08.194Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T15:35:08.197Z] [hosting] .tgz uploaded successfully, waiting for extraction
