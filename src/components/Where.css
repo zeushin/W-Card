@@ -43,3 +43,17 @@
     margin-left: 1px;
     margin-right: auto;
 }
+
+.Where .react-add-to-calendar__button {
+    text-decoration: underline;
+}
+
+.Where .react-add-to-calendar ul {
+    margin-top: 5px;
+}
+
+.Where .react-add-to-calendar li > a {
+    color: #ee9bac;
+    font-size: 0.8em;
+    line-height: 2em;
+}

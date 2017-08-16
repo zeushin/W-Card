@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import './Where.css';
+import AddToCalendar from 'react-add-to-calendar';
 
 class Where extends Component {
     _openNaverMap() {
@@ -16,13 +17,27 @@ class Where extends Component {
 
     render() {
         let mapImageUrl = 'https://firebasestorage.googleapis.com/v0/b/w-card-ce9f3.appspot.com/o/invi_img_map%402x.jpg?alt=media&token=f19710f1-c861-481f-999b-6ef8408136c9';
+        let event = {
+            title: '춀딱써니 결혼해요',
+            description: '선영&범철의 결혼식을 축하해 주세요!',
+            location: '서울 영등포구 여의대로 24 전경련타워 50층 더스카이팜',
+            startTime: '2017-09-09T18:00:00+09:00',
+            endTime: '2017-09-09T20:00:00+09:00'
+        };
+        let listItems = [{ apple: '애플 캘린더에 일정 추가하기' }, { google: '구글 캘린더에 일정 추가하기' }];
+
         return (
             <div className="Where bottomBorder sidePadding">
                 <h1>여기에서 뵈어요</h1>
                 <div className="Ribbon">
                     <img src="/image/invi_ic_ribbon@2x.jpg" alt="ribbon"/>
                 </div>
-                <h3 className="Event-time">9월 9일 토요일 저녁 6시</h3>
+                    <h3 className="Event-time">
+                        <AddToCalendar event={ event }
+                                       buttonLabel="9월 9일 토요일 저녁 6시"
+                                       displayItemIcons="false"
+                                       listItems={ listItems }/>
+                    </h3>
                 <h3>더 스카이팜</h3>
                 <p className="Contents">
                     서울특별시 영등포구 여의대로 24<br/>
