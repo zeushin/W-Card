@@ -15,6 +15,7 @@ class Where extends Component {
     }
 
     render() {
+        let mapImageUrl = 'https://firebasestorage.googleapis.com/v0/b/w-card-ce9f3.appspot.com/o/invi_img_map%402x.jpg?alt=media&token=f19710f1-c861-481f-999b-6ef8408136c9';
         return (
             <div className="Where bottomBorder sidePadding">
                 <h1>여기에서 뵈어요</h1>
@@ -30,7 +31,7 @@ class Where extends Component {
                     주차가능(지하주차장)
                 </p>
                 <div className="Map-container">
-                    <img width="100%" src="image/invi_img_map@2x.jpg" alt="map" />
+                    <img width="100%" src={ mapImageUrl } alt="map" />
                     <div className="Map-buttons">
                         <li>
                             <ul className="Naver">

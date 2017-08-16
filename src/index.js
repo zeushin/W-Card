@@ -11,7 +11,7 @@ const config = {
     authDomain: "w-card-ce9f3.firebaseapp.com",
     databaseURL: "https://w-card-ce9f3.firebaseio.com",
     projectId: "w-card-ce9f3",
-    storageBucket: "",
+    storageBucket: "w-card-ce9f3.appspot.com",
     messagingSenderId: "84537331815"
 };
 firebase.initializeApp(config);

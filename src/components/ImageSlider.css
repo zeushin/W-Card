@@ -14,3 +14,7 @@
 .ImageSlider > .slick-dots li button:before {
     font-size: 10px;
 }
+
+.ImageSlider .slick-track img {
+    width: 100%;
+}
